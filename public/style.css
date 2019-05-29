@@ -35,3 +35,7 @@ body,html {
 	left: 40px;
 }
 
+.beginButton:hover{
+	cursor: url(eye3.png) 2 2 ,pointer;
+	caret-color: red;
+}
