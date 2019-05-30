@@ -1,0 +1,114 @@
+{
+"fool":{
+	"name":"Fool",
+	"Description":"The Fool represents new beginnings, having faith in the future, being inexperienced, not knowing what to expect, having beginner's luck, improvisation and believing in the universe."
+	"img": "./public/00 Fool.jpg"
+	},
+"magician":{
+	"name":"Magician",
+	"Description":" "
+	"img": "./public/01 Magician.jpg"
+	}
+
+"priestess":{
+	"name":"Priestess",
+	"Description":""
+	"img": "./public/02 Priestess.jpg"
+	},
+
+"empress":{
+	"name":"Empress",
+	"Description":" "
+	"img": "./public/03 Empress.jpg"
+	},
+"emperor":{
+	"name":"Emperor",
+	"Description":" "
+	"img": "./public/04 Emperor.jpg"
+	},
+"hierophant":{
+	"name":"Hierophant",
+	"Description":" "
+	"img": "./public/05 Hierophant.jpg"
+	},
+"lovers":{
+	"name":"Lovers",
+	"Description":""
+	"img": "./public/06 Lovers.jpg"
+	},
+"chariot":{
+	"name":"Chariot",
+	"Description":""
+	"img": "./public/07 Chariot.jpg"
+	},
+"strength":{
+	"name":"Strength",
+	"Description":""
+	"img": "./public/08 Strength.jpg"
+	},
+"hermit":{
+	"name":"Hermit",
+	"Description":""
+	"img": "./public/09 Hermit.jpg"
+	},
+"wheel":{
+	"name":"Wheel of Fortune",
+	"Description":""
+	"img": "./public/10 Wheel.jpg"
+	},
+"justice":{
+	"name":"Justice",
+	"Description":""
+	"img": "./public/11 Justice.jpg"
+	},
+"hanged":{
+	"name":"Hanged Man",
+	"Description":""
+	"img": "./public/12 Hanged.jpg"
+	},
+"death":{
+	"name":"Death",
+	"Description":""
+	"img": "./public/13 Death.jpg"
+	},
+"temperance":{
+	"name":"Temperance",
+	"Description":""
+	"img": "./public/14 Temperance.jpg"
+	},	
+"devil":{
+	"name":"Devil",
+	"Description":""
+	"img": "./public/15 Devil.jpg"
+	},
+"tower":{
+	"name":"Temperance",
+	"Description":""
+	"img": "./public/14 Temperance.jpg"
+	},	
+"star":{
+	"name":"Hanged Man",
+	"Description":""
+	"img": "./public/12 Hanged.jpg"
+	},
+"sun":{
+	"name":"Death",
+	"Description":""
+	"img": "./public/13 Death.jpg"
+	},
+"moon":{
+	"name":"Temperance",
+	"Description":""
+	"img": "./public/14 Temperance.jpg"
+	},	
+"judgement":{
+	"name":"Temperance",
+	"Description":""
+	"img": "./public/14 Temperance.jpg"
+	},	
+"world":{
+	"name":"World",
+	"Description":""
+	"img": "./public/13 Death.jpg"
+	},
+}
