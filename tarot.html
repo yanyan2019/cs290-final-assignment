@@ -1,19 +1,85 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-  <head>
-
+<head>
     <meta charset="utf-8">
-    <title>Tarot 4 U</title>
+    <title>Tarot Cards</title>
+    <!-- This is a 3rd-party stylesheet to make available the font family to
+    be used for this page ("Roboto"). -->
+    <!--Make changes here in terms of fonts and such-->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700"
+          rel="stylesheet">
+    <!-- This 3rd-party stylesheet incorporates SVG icons from Font Awesome:
+    http://fontawesome.com/ -->
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" media="screen">
+</head>
 
-    <script src="index.js" charset="utf-8" defer></script>
-    </head>
+<body>
+    <header>
+        <!-- The <i> tag below includes the bullhorn icon from Font Awesome -->
+        <a href="#">
+            <h1 class="site-title">
+                Tarot Cards
+            </h1>
+        </a>
+        <article class="tarot-bank">
+            <ul class="tarot-list">
+                <li class="tarot-card">0    The Fool</li>
+                <li class="tarot-card">1    The Magician</li>
+                <li class="tarot-card">2    The High Priestess</li>
+                <li class="tarot-card">3    The Empress</li>
+                <li class="tarot-card">4    The Emperor</li>
+                <li class="tarot-card">5    The Hierophant</li>
+                <li class="tarot-card">6    The Lovers</li>
+                <li class="tarot-card">7    The Chariot</li>
+                <li class="tarot-card">8    Strength</li>
+                <li class="tarot-card">9    The Hermit</li>
+                <li class="tarot-card">10   The Wheel of Fortune</li>
+                <li class="tarot-card">11   Justice</li>
+                <li class="tarot-card">12   The Hanged Man</li>
+                <li class="tarot-card">13   Death</li>
+                <li class="tarot-card">14   Temperance</li>
+                <li class="tarot-card">15   The Devil</li>
+                <li class="tarot-card">16   The Tower</li>
+                <li class="tarot-card">17   The Star</li>
+                <li class="tarot-card">18   The Moon</li>
+                <li class="tarot-card">19   The Sun</li>
+                <li class="tarot-card">20   Judgement</li>
+                <li class="tarot-card">21   The World</li>
+            </ul>
 
-    <body>
-    <main class ="tarot-cards">
+        </article>
+    </header>
+    <main class="tarot-container">
+
+        <section class="tarot-display">
+            <!--Be sure to check here and see how imgs are put here
+            You will need 2, one of the card's face,
+            And one of it's description-->
+            <div class="tarot-card-display">
+                <img class="tarot-face" src="https://i.pinimg.com/originals/4a/8f/b2/4a8fb204105488dfdd9b50b3d3bae647.jpg" />
+            </div>
+            <div class="tarot-card-info">
+                <img class="tarot-background" src="https://i.pinimg.com/originals/4a/8f/b2/4a8fb204105488dfdd9b50b3d3bae647.jpg" />
+
+                <p class="tarot-name">
+                    (Handlebar Tarot Names Here.)
+                </p>
+                <p class="tarot-description">
+                    (Handlebar Tarot Descriptions Here.)
+                </p>
+
+            </div>
+
+
+        </section>
+
 
     </main>
 
-  <div class="tarot-card-modal" class="hide">
-  </div>
-    </body>
+</body>
+</html>
