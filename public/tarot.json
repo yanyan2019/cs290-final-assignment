@@ -1,14 +1,15 @@
 {
 "fool":{
 	"name":"Fool",
-	"Description":"The Fool represents new beginnings, having faith in the future, being inexperienced, not knowing what to expect, having beginner's luck, improvisation and believing in the universe."
+	"Description":"The Fool represents new beginnings, having faith in the future, being inexperienced, not knowing what to expect, having beginner's luck, improvisation and believing in the universe.",
 	"img": "./public/00 Fool.jpg"
 	},
+	
 "magician":{
 	"name":"Magician",
-	"Description":" "
+	"Description":" ",
 	"img": "./public/01 Magician.jpg"
-	}
+	},
 
 "priestess":{
 	"name":"Priestess",
@@ -78,37 +79,37 @@
 	},	
 "devil":{
 	"name":"Devil",
-	"Description":""
+	"Description":"",
 	"img": "./public/15 Devil.jpg"
 	},
 "tower":{
 	"name":"Temperance",
-	"Description":""
-	"img": "./public/14 Temperance.jpg"
+	"Description":"",
+	"img": "./public/16 Tower.jpg"
 	},	
 "star":{
 	"name":"Hanged Man",
-	"Description":""
-	"img": "./public/12 Hanged.jpg"
+	"Description":"",
+	"img": "./public/17 Star.jpg"
 	},
 "sun":{
 	"name":"Death",
-	"Description":""
-	"img": "./public/13 Death.jpg"
+	"Description":"",
+	"img": "./public/18 Sun.jpg"
 	},
 "moon":{
 	"name":"Temperance",
 	"Description":""
-	"img": "./public/14 Temperance.jpg"
+	"img": "./public/19 Moon.jpg"
 	},	
 "judgement":{
 	"name":"Temperance",
 	"Description":""
-	"img": "./public/14 Temperance.jpg"
+	"img": "./public/20 Judgement.jpg"
 	},	
 "world":{
 	"name":"World",
 	"Description":""
-	"img": "./public/13 Death.jpg"
+	"img": "./public/21 World.jpg"
 	},
 }
