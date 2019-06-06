@@ -1,0 +1,40 @@
+<header class="header">
+    <h1>Tarot Card</h1>
+</header>
+<sidebar class="sidebar">
+    <li><a href="0">0    The Fool</a></li>
+    <li><a href="1">1    The Magician</a></li>
+    <li><a href="2">2    The High Priestess</a></li>
+    <li><a href="3">3    The Empress</a></li>
+    <li><a href="4">4    The Emperor</a></li>
+    <li><a href="5">5    The Hierophant</a></li>
+    <li><a href="6">6    The Lovers</a></li>
+    <li><a href="7">7    The Chariot</a></li>
+    <li><a href="8">8    Strength</a></li>
+    <li><a href="9">9    The Hermit</a></li>
+    <li><a href="10">10   The Wheel of Fortune</a></li>
+    <li><a href="11">11   Justice</a></li>
+    <li><a href="12">12   The Hanged Man</a></li>
+    <li><a href="13">13   Death</a></li>
+    <li><a href="14">14   Temperance</a></li>
+    <li><a href="15">15   The Devil</a></li>
+    <li><a href="16">16   The Tower</a></li>
+    <li><a href="17">17   The Star</a></li>
+    <li><a href="18">18   The Moon</a></li>
+    <li><a href="19">19   The Sun</a></li>
+    <li><a href="20">20   Judgement</a></li>
+    <li><a href="21">21   The World</a></li>
+    <li class="filler"></li>
+</sidebar>
+<div class="card-holder">
+    <!--<article class="card">
+        <img class="face" src="cardBack.png" width="240" />
+        <div class="desc">
+            <h2 class="title">The Wise One</h2>
+            <p>Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. It's ironic he could save others from death, but not himself.</p>
+        </div>
+    </article>-->
+    {{#if tarotSelected}}
+    {{> tarotCard}}
+    {{/if}}
+</div>
