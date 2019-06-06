@@ -1,0 +1,29 @@
+{
+  "name": "master-assignment-5",
+  "version": "1.0.0",
+  "description": "Handlebars templating",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osu-cs290-sp19/master-assignment-5.git"
+  },
+  "author": "SuperPrushka64",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/osu-cs290-sp19/master-assignment-5/issues"
+  },
+  "homepage": "https://github.com/osu-cs290-sp19/master-assignment-5#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0"
+  },
+  "devDependencies": {},
+  "start": "node server.js",
+  "prestart": "npm run page card main 404a",
+  "scripts": {
+  	"page": "handlebars views/twitPage.handlebars -f public/twitPageTmp.js",
+  	"card": "handlebars views/partials/twitPage.handlebars -f public/twitCardTmp.js",
+  	"main": "handlebars views/layouts/main.handlebars -f public/mainTmp.js",
+  	"404a": "handlebars views/404a.handlebars -f public/404Tmp.js"
+  }
+}
