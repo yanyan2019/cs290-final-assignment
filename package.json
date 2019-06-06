@@ -21,9 +21,9 @@
   "start": "node server.js",
   "prestart": "npm run page card main 404a",
   "scripts": {
-  	"page": "handlebars views/twitPage.handlebars -f public/twitPageTmp.js",
-  	"card": "handlebars views/partials/twitPage.handlebars -f public/twitCardTmp.js",
+  	"card": "handlebars views/partials/tarotCard.handlebars -f public/tarotCardTmp.js",
   	"main": "handlebars views/layouts/main.handlebars -f public/mainTmp.js",
-  	"404a": "handlebars views/404a.handlebars -f public/404Tmp.js"
+  	"page": "handlebars views/tarotPage.handlebars -f public/pageTmp.js"
+    "404a": "handlebars views/404.handlebars -f public/404Tmp.js"
   }
 }
