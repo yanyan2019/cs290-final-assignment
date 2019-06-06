@@ -23,7 +23,7 @@
   "scripts": {
   	"card": "handlebars views/partials/tarotCard.handlebars -f public/tarotCardTmp.js",
   	"main": "handlebars views/layouts/main.handlebars -f public/mainTmp.js",
-  	"page": "handlebars views/tarotPage.handlebars -f public/pageTmp.js"
+  	"page": "handlebars views/tarotPage.handlebars -f public/pageTmp.js",
     "404a": "handlebars views/404.handlebars -f public/404Tmp.js"
   }
 }
