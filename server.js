@@ -29,7 +29,7 @@ var port = process.env.PORT || 3000;
 
 //var mongoUrl = `mongodb://${mongoUser}:${mongoPassword}@${mongoHost}:${mongoPort}/${mongoDBName}`;
 //var db = null;
-
+console.log("<!-->\n    	          _\n    	      ,__(.)< (NYAN!)\n    	       \___)\n~~~~~~~~~~~~~~~~~~\n<!-->")
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
