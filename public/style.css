@@ -2,16 +2,18 @@
  * Add your CSS styles to this file.
  */
 
-body {
+body{
 	background: url("moonlight.jpg") no-repeat center;
 	background-color: #474842;
 	margin: 0px;
 }
+
 .header {
 	margin: 0px 0px;
 	padding: 5px;
 	background-color: #272822;
 }
+
 a {
 	text-decoration:none;
 	color: #888473;
