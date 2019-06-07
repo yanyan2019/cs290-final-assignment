@@ -15,15 +15,16 @@
   "homepage": "https://github.com/osu-cs290-sp19/master-assignment-5#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0"
+    "express-handlebars": "^3.1.0",
+    "mongodb": "^3.2.7"
   },
   "devDependencies": {},
   "start": "node server.js",
   "prestart": "npm run page card main 404a",
   "scripts": {
-  	"card": "handlebars views/partials/tarotCard.handlebars -f public/tarotCardTmp.js",
-  	"main": "handlebars views/layouts/main.handlebars -f public/mainTmp.js",
-  	"page": "handlebars views/tarotPage.handlebars -f public/pageTmp.js",
+    "card": "handlebars views/partials/tarotCard.handlebars -f public/tarotCardTmp.js",
+    "main": "handlebars views/layouts/main.handlebars -f public/mainTmp.js",
+    "page": "handlebars views/tarotPage.handlebars -f public/pageTmp.js",
     "404a": "handlebars views/404.handlebars -f public/404Tmp.js"
   }
 }

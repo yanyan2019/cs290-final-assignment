@@ -41,18 +41,18 @@ app.use(express.static('public'));
 // root path to the front page
 app.get('/', function(req, res, next){
 	console.log("root page is loading");
-    res.status(200).render('homePage'); //where homePage is the templetized version of public/index.html
+    //res.status(200).render('homePage'); //where homePage is the templetized version of public/index.html
     //FIX ME
     
-    //res.status(200).sendFile(__dirname+ '/public/index.html');
+    res.status(200).sendFile(__dirname+ '/public/index.html');
 });
 
 // home page
-app.get('/home',function(req, res, next){
+app.get('/tarot',function(req, res, next){
     console.log("home page is loading");
     //where displayPage = the basic handlebars template page of BEFORE a card has been selected
     // More than likely FIX ME here
-    res.status(200).render('displayPage');
+    res.status(200).render('tarotPage');
 	//res.status(200).sendFile(__dirname+ '/public/home.html');
 });
 
