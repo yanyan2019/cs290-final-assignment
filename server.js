@@ -16,7 +16,7 @@ var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
 
-var tarotData = require('./public/tarotData');
+var tarotData = require('./public/tarot');
 
 var app = express();
 var port = process.env.PORT || 3000;
