@@ -71,7 +71,7 @@ app.get('/tarot/:card', function (req, res, next) {
 app.get('*', function(req, res, next){
     console.log("404 page is loading");
 
-    res.status(404).render('404page');
+    res.status(404).render('404');
 	//res.status(404).sendFile(__dirname+ '/public/notfound.html');
 });
 
