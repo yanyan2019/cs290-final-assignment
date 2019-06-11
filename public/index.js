@@ -17,3 +17,16 @@ function fan(){
  // }
   
 }
+
+function createCard(photoURL, caption, name) {
+
+  var CardContext = {
+    photo: photoURL,
+    desc: caption
+	name: name
+  };
+
+  var CardHTML = Handlebars.templates.tarotCard(CardContext);
+  console.log("== photoCardHTML:", CardHTML);
+  return CardHTML;
+}
