@@ -1,16 +1,9 @@
 /*
  * Add your CSS styles to this file.
  */
-
-html{
-	height:100%;
-}
-
 body {
-	
 	background-color: #474842;
-	margin: 0px;	
-	min-height:100%;
+	margin: 0px;
 }
 .header {
 	margin: 0px 0px;
@@ -25,10 +18,6 @@ a {
 a:hover {
 	color: #67d0cc;
 	font-size: 16px;
-}
-404a {
-	font-size: 64px;
-	color:#b3e35d;
 }
 h1 {
 	margin: 0px;
