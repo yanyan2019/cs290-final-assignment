@@ -3,7 +3,8 @@
  */
 
 body{
-	background: url("moonlight.jpg") no-repeat center;
+	background: url("cloud.jpg") no-repeat center;
+	background-size: cover;
 	background-color: #474842;
 	margin: 0px;
 }
