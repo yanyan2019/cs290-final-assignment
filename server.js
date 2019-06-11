@@ -17,18 +17,12 @@ var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
 
 var tarotData = require('./public/tarot.json');
+var postData; // SET THIS TO THE MONGODB FOR COMMENTS
+
 
 var app = express();
 var port = process.env.PORT || 3000;
 
-//var mongoHost = process.env.MONGO_HOST;
-//var mongoPort = process.env.MONGO_PORT || 27017;
-//var mongoUser = process.env.MONGO_USER;
-//var mongoPassword = process.env.MONGO_PASSWORD;
-//var mongoDBName = process.env.MONGO_DB_NAME;
-
-//var mongoUrl = `mongodb://${mongoUser}:${mongoPassword}@${mongoHost}:${mongoPort}/${mongoDBName}`;
-//var db = null;
 console.log("<!-->\n     _\n ,__(.)< (NYAN!)\n  \\___)\n~~~~~~~~~~~~~~~~~~\n<!-->");
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
@@ -49,7 +43,6 @@ app.get('/tarot',function(req, res, next){
     //where displayPage = the basic handlebars template page of BEFORE a card has been selected
     // More than likely FIX ME here
     res.status(200).render('tarotPage');
-	//res.status(200).sendFile(__dirname+ '/public/home.html');
 });
 
 // function to retrive a specific card
@@ -62,7 +55,9 @@ app.get('/tarot/:card', function (req, res, next) {
           singleCard: true,
           name: tarotData[card].name,
           description: tarotData[card].Description,
-          photo: tarotData[card].img
+          photo: tarotData[card].img,
+          
+          posts: postData
         });
     } else {
         next();

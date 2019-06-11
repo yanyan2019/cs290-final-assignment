@@ -26,6 +26,20 @@
     <li><a href="19">19   The Sun</a></li>
     <li><a href="20">20   Judgement</a></li>
     <li><a href="21">21   The World</a></li>
+    <div>
+			<form  id="postForm" class="box">
+				<h2>Comments:</h2>
+				<textarea id="ftitle" placeholder="Name:" rows="1" id="titBox"></textarea>
+				<textarea id="ftext" placeholder="Text:"rows="5" id="texBox"></textarea>
+				<input id="fbutton" type="button" value="Submit">
+			</form>
+		</div>
+		<div id="postBox">
+			<!-- Comments Go here!-->
+			{{#each posts}}
+				{{> ccard}}
+			{{/each}}
+		</div>
     <li class="filler"></li>
 </sidebar>
 <div class="card-holder">
@@ -43,16 +57,6 @@
     {{> tarotCard}}
     {{/if}}
 </div>
-<script src="index.js" defer></script>
-<img class="button" href="button.png">
 <div class="add-card">
-	<div>
-		<form  id="postForm" class="box">
-			<h2>New post:</h2>
-			<textarea id="ftitle" placeholder="Title:" rows="1" id="titBox"></textarea>
-			<textarea id="fimg" placeholder="Image URL:"rows="1" id="texBox"></textarea>
-			<textarea id="ftext" placeholder="Description:"rows="1" id="texBox"></textarea>
-			<input id="fbutton" type="button" value="Submit">
-		</form>
-	</div>
+	
 </div>
