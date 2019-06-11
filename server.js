@@ -21,14 +21,16 @@ var tarotData = require('./public/tarot');
 var app = express();
 var port = process.env.PORT || 3000;
 
-//var mongoHost = process.env.MONGO_HOST;
-//var mongoPort = process.env.MONGO_PORT || 27017;
-//var mongoUser = process.env.MONGO_USER;
-//var mongoPassword = process.env.MONGO_PASSWORD;
-//var mongoDBName = process.env.MONGO_DB_NAME;
+var mongoHost = process.env.MONGO_HOST;
+var mongoPort = process.env.MONGO_PORT || 27017;
+var mongoUser = process.env.MONGO_USER;
+var mongoPassword = process.env.MONGO_PASSWORD;
+var mongoDBName = process.env.MONGO_DB_NAME;
 
-//var mongoUrl = `mongodb://${mongoUser}:${mongoPassword}@${mongoHost}:${mongoPort}/${mongoDBName}`;
-//var db = null;
+var mongoUrl = `mongodb://${mongoUser}:${mongoPassword}@${mongoHost}:${mongoPort}/${mongoDBName}`;
+var db = null;
+
+
 console.log("<!-->\n     _\n ,__(.)< (NYAN!)\n  \\___)\n~~~~~~~~~~~~~~~~~~\n<!-->");
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
@@ -59,6 +61,8 @@ app.get('/tarot',function(req, res, next){
 // function to retrive a specific card
 app.get('/tarot/:card', function (req, res, next) {
     var card = req.params.card.toLowerCase();
+    var collection = db.collection('tarot');
+
 
     if (tarotData[card]) {
         //templatize page's for cards FIX ME 
@@ -82,6 +86,16 @@ app.get('*', function(req, res, next){
 	//res.status(404).sendFile(__dirname+ '/public/notfound.html');
 });
 
-app.listen(port, function(){
-	console.log(" == server is listening: ", port);
+//app.listen(port, function(){
+//	console.log(" == server is listening: ", port);
+//});
+
+MongoClient.connect(mongoUrl, function (err, client) {
+  if (err) {
+    throw err;
+  }
+  db = client.db(mongoDBName);
+  app.listen(port, function () {
+    console.log("== Server listening on port", port);
+  });
 });
