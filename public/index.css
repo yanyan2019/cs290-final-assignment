@@ -10,28 +10,20 @@ html {
 a{
 	text-decoration: none;
 }
-
-
 .bg{
 	height: 100%;
 	margin: 0px;
 }
-
-
-
 .titleButton {
 	font-size: 80px;
+	color: #67d0cc;
 	position: relative;
-	top: 300px;
-	left: 60px;
+	margin: 100px auto;
 }
-
 .beginButton{
 	font-size: 50px;
-	color: white;
+	color: #ebde91;
 	position: relative;
-	top: 400px;
-	left: 50px;
 }
 
 .beginButton:hover {

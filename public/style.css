@@ -1,20 +1,17 @@
 /*
  * Add your CSS styles to this file.
  */
-
-body{
+body {
+	background-color: #474842;
 	background: url("cloud.jpg") no-repeat center;
 	background-size: cover;
-	background-color: #474842;
 	margin: 0px;
 }
-
 .header {
 	margin: 0px 0px;
 	padding: 5px;
 	background-color: #272822;
 }
-
 a {
 	text-decoration:none;
 	color: #888473;
@@ -23,10 +20,6 @@ a {
 a:hover {
 	color: #67d0cc;
 	font-size: 16px;
-}
-404a {
-	font-size: 64px;
-	color:#b3e35d;
 }
 h1 {
 	margin: 0px;

@@ -16,7 +16,7 @@ var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
 
-var tarotData = require('./public/tarot');
+var tarotData = require('./public/tarot.json');
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -35,16 +35,12 @@ app.set('view engine', 'handlebars');
 
 app.use(bodyParser.json());
 
-app.use(express.static('public'));
-
+app.use(express.static(__dirname+'/public'));
 
 // root path to the front page
 app.get('/', function(req, res, next){
 	console.log("root page is loading");
-    //res.status(200).render('homePage'); //where homePage is the templetized version of public/index.html
-    //FIX ME
-    
-    res.status(200).sendFile(__dirname+ '/public/index.html');
+  res.status(200).sendFile(__dirname+ '/public/index.html');
 });
 
 // home page
@@ -59,7 +55,6 @@ app.get('/tarot',function(req, res, next){
 // function to retrive a specific card
 app.get('/tarot/:card', function (req, res, next) {
     var card = req.params.card.toLowerCase();
-
     if (tarotData[card]) {
         //templatize page's for cards FIX ME 
         console.log("name", tarotData[card].name);
@@ -77,9 +72,7 @@ app.get('/tarot/:card', function (req, res, next) {
 // 404 page
 app.get('*', function(req, res, next){
     console.log("404 page is loading");
-
     res.status(404).render('404');
-	//res.status(404).sendFile(__dirname+ '/public/notfound.html');
 });
 
 app.listen(port, function(){
