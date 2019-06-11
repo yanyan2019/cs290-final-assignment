@@ -1,3 +1,5 @@
+
+
 <header class="header">
     <h1>Tarot Card</h1>
 </header>
@@ -27,6 +29,9 @@
     <li class="filler"></li>
 </sidebar>
 <div class="card-holder">
+    {{#if singleCard}}
+     {{> tarotCard}}
+    {{/if}}
     <!--<article class="card">
         <img class="face" src="cardBack.png" width="240" />
         <div class="desc">

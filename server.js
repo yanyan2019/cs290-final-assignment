@@ -59,9 +59,16 @@ app.get('/tarot',function(req, res, next){
 // function to retrive a specific card
 app.get('/tarot/:card', function (req, res, next) {
     var card = req.params.card.toLowerCase();
+
     if (tarotData[card]) {
         //templatize page's for cards FIX ME 
-        res.status(200).render('tarotPage', tarotData[card]);
+        console.log("name", tarotData[card].name);
+        res.status(200).render('tarotPage', {
+          singleCard: true,
+          name: tarotData[card].name,
+          description: tarotData[card].Description,
+          photo: tarotData[card].img
+        });
     } else {
         next();
     }
