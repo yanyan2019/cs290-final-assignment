@@ -4,7 +4,6 @@ var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
 var bodyParser = require('body-parser');
-var MongoClient = require('mongodb').MongoClient;
 
 var tarotData = require('./public/tarot.json');
 var postData = require('./public/posts.json');
@@ -31,18 +30,19 @@ app.use(express.static(__dirname+'/public'));
 
 app.get('/', function(req, res, next){
 	console.log("root page is loading");
+	console.log("req.url:",req.url);
   res.status(200).sendFile(__dirname+ '/public/index.html');
 });
 
 app.get('/tarot',function(req, res, next){
     console.log("home page is loading");
-    //where displayPage = the basic handlebars template page of BEFORE a card has been selected
-    // More than likely FIX ME here
+    console.log("req.url:",req.url);
     res.status(200).render('tarotPage');
 });
 
 app.get('/tarot/:card', function (req, res, next) {
     var card = req.params.card.toLowerCase();
+    console.log("req.url:",req.url);
     if (tarotData[card]) {
         //templatize page's for cards FIX ME 
         console.log("name", tarotData[card].name);
@@ -58,6 +58,7 @@ app.get('/tarot/:card', function (req, res, next) {
     }
 });
 app.post('/comment', function(req, res, next) {
+	console.log("req.url: ",req.url);
 	if(req.body && req.body.name && req.body.text) {
 		console.log("req.body: ",req.body);
 		var post = {
