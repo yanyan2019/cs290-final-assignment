@@ -20,9 +20,10 @@
   },
   "devDependencies": {},
   "start": "node server.js",
-  "prestart": "npm run page card main 404a",
+  "prestart": "npm run page card ccard main 404a",
   "scripts": {
     "card": "handlebars views/partials/tarotCard.handlebars -f public/tarotCardTmp.js",
+    "ccard": "handlebars views/partials/ccard.handlebars -f public/ccardTmp.js",
     "main": "handlebars views/layouts/main.handlebars -f public/mainTmp.js",
     "page": "handlebars views/tarotPage.handlebars -f public/pageTmp.js",
     "404a": "handlebars views/404.handlebars -f public/404Tmp.js"
