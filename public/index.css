@@ -4,8 +4,8 @@ html {
 	background: url("moonlight.jpg") no-repeat center;
 	background-size: cover;
 	text-align: center;
+	font-family: 'Cookie', cursive;
 }
-
 a{
 	text-decoration: none;
 }
@@ -14,13 +14,14 @@ a{
 	margin: 0px;
 }
 .titleButton {
-	font-size: 80px;
-	color: #67d0cc;
+	font-size: 100px;
+	color: #272822;
 	position: relative;
-	margin: 100px auto;
+	margin: 220px auto;
+	text-shadow: -2px 0 #bbae61, 0 2px #bbae61, 2px 0 #bbae61, 0 -2px #bbae61;
 }
 .beginButton{
-	font-size: 50px;
+	font-size: 70px;
 	color: #ebde91;
 	position: relative;
 }
